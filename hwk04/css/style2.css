@@ -145,27 +145,11 @@ button:hover{
 #mic{
     fill: #fff;
 }
-@keyframes wave {
-    0%   {fill: white;}
-    50% {fill: white;}
-    100% {fill: none;}
-}
-@keyframes wave2{
-    0%   {fill: none;}
-    50% {fill: white;}
-    100% {fill: none;}
-}
 #micInside{
-    animation-name: wave;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    display: none;
 }
 #micOutside{
-    animation-name: wave2;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    display: none;
 }
 .hidden{
     display: none;
