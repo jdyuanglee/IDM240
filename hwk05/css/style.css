@@ -19,24 +19,31 @@ img, object{
 }
 .mic{
     transition-duration: .3s;
-    margin-top: 2rem;
-    width: 4rem;
+    /* margin-top: 2rem; */
+    width: 3.5rem;
     transform: rotate(90deg);
     margin-left: -.5rem;
+    /* margin: auto 0; */
     /* z-index: 0; */
 }
-.mic:hover{
+#mic:hover{
     cursor: pointer;
-    margin-left: -.1rem;
+}
+.mic:hover{
+    margin-left: -.2rem;    
 }
 .switch{
-    margin: auto 2rem  ;
+    margin: auto 1rem;
     display: flex;
-    width: 5rem;
+    width: 4rem;
     border-style: solid;
     border-color: white;
     border-width: 2px;
     border-radius: 20rem;
+}
+.switch img{
+    width: 2rem;
+    height: 2rem;
 }
 .up{
     padding-top: 1rem;
@@ -46,23 +53,23 @@ img, object{
 .titleImg1{
     background-image: url('../assets/lineUp.jpg');
     background-size: cover;
-    height: 18rem;
+    height: 10rem;
     background-position: center;    
 }.titleImg2{
     background-image: url('../assets/guides.jpg');
     background-position: center;    
     background-size: cover;
-    height: 18rem;
+    height: 10rem;
 }.titleImg3{
     background-image: url('../assets/app.png');
     background-position: center;    
     background-size: cover;
-    height: 18rem;
+    height: 10rem;
 }.titleImg4{
     background-image: url('../assets/passes.jpg');
     background-position: center;    
     background-size: cover;
-    height: 18rem;
+    height: 10rem;
 }
 main h3{
     font-size: 1.5rem;
@@ -82,13 +89,18 @@ main{
 }
 
 .viewmore{
-    /* height: 4rem; */
+    position: absolute;
+    left: 47.5%;
+    top: 90vh;
     text-align: center;
 }
 .viewmore img{
     width: 2rem;
-    /* height: 2rem; */
     margin: auto;
+}
+.viewmore a{
+    color: white;
+    text-decoration: none;
 }
 .down a{
     width: 2.5rem;
@@ -117,24 +129,25 @@ header{
     position: absolute;
     top: 100vh;
     background-position: center;
-    height: 153rem;
+    height: 120rem;
     width: 100%;
     z-index: -1;
     background-image: url('../assets/bg.jpg');    
     /* background-color: red; */
 }
 .logo{
-    margin-bottom: 10rem;
+    margin-bottom: 26rem;
+    /* margin-bottom: 60%; */
 	text-align: center;
 }
 .logo img{
-    width: 23rem;
+    width: 19rem;
     /* height: auto; */
     margin: auto;
 }
 .info{
     text-align: center;
-    height: 33rem;
+    height: 25rem;
     padding: 1.3rem;
     margin: -1.3rem auto; 
     margin-bottom: 6rem;
@@ -178,10 +191,6 @@ button{
 button:hover{
     cursor: pointer;
 }
-.switch img{
-    width: 2.5rem;
-    height: 2.5rem;
-}
 #mic{
     fill: #fff;
 }
@@ -211,6 +220,12 @@ button:hover{
     display: none;
 }
 @media screen and (min-width : 768px) {
+    .info{
+        height: 33rem;
+    }
+    .titleImg1,.titleImg2,.titleImg3,.titleImg4{
+        height: 18rem;        
+    }
     *{
         font-size: 100%;
     }
@@ -218,10 +233,7 @@ button:hover{
         width: 25rem;
     }
     .bgMain{
-        height: 76rem;
-    }
-    .viewmore h3{
-        display: inline;
+        height: 78rem;
     }
     main{
         display: grid;
@@ -235,6 +247,12 @@ button:hover{
 
 }
 @media screen and (min-width : 1280px) {
+    .logo{
+        margin-bottom: 19rem;
+    }
+    .viewmore h3{
+        display: inline;
+    }
     .bgMain{
         height: 0vh;
     }
@@ -245,8 +263,8 @@ button:hover{
         display: flex;
         justify-content: space-around;
     }
-    .text{
-        margin: 0;
+    .logoimg{
+        margin-left: 20rem;
     }
     main{
         max-width: 95%;
@@ -255,7 +273,6 @@ button:hover{
     }
 }
 @media (min-width: 87.5em) {
-
     html {
       font-size: 120%;
     }

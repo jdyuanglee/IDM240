@@ -60,6 +60,22 @@ img, object{
     /* height: 4rem; */
     text-align: center;
 }
+.viewmore a {
+
+}
+.viewmore span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
 .viewmore img{
     width: 2rem;
     /* height: 2rem; */
