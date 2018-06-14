@@ -19,12 +19,9 @@ img, object{
 }
 .mic{
     transition-duration: .3s;
-    /* margin-top: 2rem; */
     width: 4.5rem;
     transform: rotate(90deg);
     margin-left: -1rem;
-    /* margin: auto 0; */
-    /* z-index: 0; */
     background: none;
 }
 #mic:hover{
@@ -51,6 +48,7 @@ img, object{
     display: flex;
     justify-content: space-between;
 }
+
 .titleImg1{
     background-image: url('assets/lineUp.jpg');
     background-size: cover;
@@ -72,6 +70,8 @@ img, object{
     background-size: cover;
     height: 10rem;
 }
+
+/*fonts size*/
 main h3{
     font-size: 1.5rem;
     font-weight: 800;
@@ -84,6 +84,8 @@ main{
     margin: auto;
     max-width: 38rem;
 }
+
+/*icons*/
 .icon{
     width: 6rem;
     margin: -3rem auto 0;
@@ -113,6 +115,8 @@ main{
 .night{
     visibility: hidden;
 }
+
+/*header*/
 header{
     color: white;
     height: 100vh;
@@ -125,7 +129,18 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
+.logo{
+    /* margin-bottom: 26rem; */
+    margin-bottom: 60%;
+    text-align: center;
+}
+.logo img{
+    width: 19rem;
+    /* height: auto; */
+    margin: auto;
+}
 
+/*main*/
 .bgMain{
     position: absolute;
     top: 100vh;
@@ -136,16 +151,7 @@ header{
     background-image: url('assets/bg.jpg');    
     /* background-color: red; */
 }
-.logo{
-    /* margin-bottom: 26rem; */
-    margin-bottom: 60%;
-	text-align: center;
-}
-.logo img{
-    width: 19rem;
-    /* height: auto; */
-    margin: auto;
-}
+
 .info{
     text-align: center;
     height: 25rem;
@@ -167,6 +173,7 @@ header{
     height: 7rem;
 }
 
+/*buttons*/
 main button{
     border: 5px solid rgba(0, 0, 0, .1);
     width: 10rem;
@@ -180,15 +187,16 @@ main button{
     background-color: #BB7474;
 }
 #button2{
-    background-color: #0B296B;
+    background-color: #3c424c;
 }
 #button3{
     background-color: #32BEA6;
 }
 #button4{
-    background-color: #E64500;
+    background-color: #d75051;
 }
 
+/*mic's animation*/
 #mic{
     fill: #fff;
 }
@@ -248,9 +256,25 @@ button:hover{
     transform-origin: center;
 } */
 
+
 /*CINEMA*/
 #cinema{
     transition: transform .5s ease-in-out;
+}
+.star0{
+    transition: 1s;
+}
+.star1{
+    transition: .5s;
+}
+.star2{
+    transition: .3s;
+}
+.star3{
+    transition: .9s;
+}
+.star4{
+    transition: 1.2s;
 }
 .ishovered1 .star0{
     fill:#4a0005;
@@ -290,12 +314,16 @@ button:hover{
     transition-duration: .5s;
 }
 
-@media screen and (min-width : 1280px) {
-    object{
-        max-width: 15rem;
-    }
-
+/*COMPASS*/
+#pointer{
+    transition: transform .8s ease-in-out   ;
 }
+.ishovered4 #pointer{
+    transform: rotate(360deg);
+    transform-origin: 50% 50%;
+}
+
+
 @media screen and (min-width : 768px) {
     .info{
         height: 33rem;

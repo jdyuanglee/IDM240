@@ -2,7 +2,7 @@ var audioPlayerObj = document.getElementById('audioplayer');
 var bugleObj = document.getElementById('bugle');
 
 
-var sndPlaying = true;
+var sndPlaying = false;
 
 
 function audioToggle() {
@@ -50,8 +50,8 @@ function noanimation3(){
 	devices.classList.remove('ishovered3');
 }
 function animation4(){
-	devices.classList.add('ishovered4');
+	compass.classList.add('ishovered4');
 }
 function noanimation4(){
-	devices.classList.remove('ishovered4');
+	compass.classList.remove('ishovered4');
 }
