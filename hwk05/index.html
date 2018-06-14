@@ -10,15 +10,14 @@
 </head>
 
 <body>
+    <audio id="audioplayer" src="audio/halo1.mp3"></audio>
     <header>
         <div class="up">
-            <a href="nomusic.html">
-                <div class="mic">
-                    <object data="assets/iconsvg/mic.svg" type="image/svg+xml">
-                        <img src="assets/iconsvg/mic.png" alt="icon">
-                    </object>
-                </div>
-            </a>
+            <button class="mic" type="button" onclick="audioToggle();" >
+                <object data="assets/iconsvg/mic.svg" type="image/svg+xml">
+                    <img src="assets/iconsvg/mic.png" alt="icon">
+                </object>
+            </button>
             <div class="switch">
                 <img class="day" src="assets/day.png" alt="day">
                 <img class="night" src="assets/night.png" alt="night">
@@ -37,7 +36,7 @@
         <div class="viewmore">
             <a href="#main">
                 <img src="assets/arrow.png" alt="arrow">
-                <h3>view more</h3>                
+                <h3>view more</h3>
             </a>
         </div>
         <div class="down">
@@ -116,7 +115,7 @@
         </div>
         </div>
     </main>
-
+    <script src="main.js"></script>
 </body>
 
 </html>

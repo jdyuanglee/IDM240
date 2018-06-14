@@ -20,17 +20,18 @@ img, object{
 .mic{
     transition-duration: .3s;
     /* margin-top: 2rem; */
-    width: 3.5rem;
+    width: 4.5rem;
     transform: rotate(90deg);
-    margin-left: -.5rem;
+    margin-left: -1rem;
     /* margin: auto 0; */
     /* z-index: 0; */
+    background: none;
 }
 #mic:hover{
     cursor: pointer;
 }
 .mic:hover{
-    margin-left: -.2rem;    
+    margin-left: -.5rem;    
 }
 .switch{
     margin: auto 1rem;
@@ -165,7 +166,8 @@ header{
     margin: 1rem 0;
     height: 7rem;
 }
-button{
+
+main button{
     width: 10rem;
     height: 3.5rem;
     border: 0;

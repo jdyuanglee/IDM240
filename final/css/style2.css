@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    border: 0;  
+    box-sizing: border-box;
+    font-family: Futura;
+    font-weight: 300;
+    line-height: 1.5;
+}
+img, object{
+    display: block;
+    width: 100%;
+    /* height: auto; */
+}
+.down{
+    margin: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.mic{
+    transition-duration: .3s;
+    margin-top: 2rem;
+    width: 4rem;
+    transform: rotate(90deg);
+    margin-left: -.5rem;
+    /* z-index: 0; */
+}
+.mic:hover{
+    cursor: pointer;
+    margin-left: -.1rem;
+}
+.switch{
+    margin: auto 2rem  ;
+    display: flex;
+    width: 5rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 20rem;
+}
+.up{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.titleImg1{
+    background-image: url('../assets/lineUp.jpg');
+    background-size: cover;
+    height: 18rem;
+}.titleImg2{
+    background-image: url('../assets/lineUp.jpg');
+    background-size: cover;
+    height: 18rem;
+}
+.icon{
+    width: 6rem;
+    margin: -3rem auto 0;
+}
+
+.viewmore{
+    /* height: 4rem; */
+    text-align: center;
+}
+.viewmore a {
+
+}
+.viewmore span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+.viewmore img{
+    width: 2rem;
+    /* height: 2rem; */
+    margin: auto;
+}
+.venue,.mainWeb{
+    width: 3rem;
+    height: 3rem;
+}
+.night{
+    visibility: hidden;
+}
+header{
+    color: white;
+    height: 100vh;
+    /* background-image: url('../assets/bg/1.jpg'); */
+    /* background-image: url('../assets/bg/5.jpg'); */
+    background-image: url('../assets/bg/6.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bgMain{
+    position: absolute;
+    top: 100vh;
+    background-position: center;
+    height: 400vh;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../assets/bg.jpg');    
+    /* background-color: red; */
+}
+.logo{
+    margin-bottom: 10rem;
+	text-align: center;
+}
+.logo img{
+    width: 25rem;
+    /* height: auto; */
+    margin: auto;
+}
+.info{
+    text-align: center;
+    height: 31rem;
+    padding: 1.3rem;
+    margin: -1.3rem auto; 
+    margin-bottom: 6rem;
+    width: 70%;
+    background-color: #bbb;
+}
+.info2{
+    /* margin: 2rem; */
+    background-color: #fff;
+}
+.viewmore h3{
+    display: none;
+}
+.text{
+    text-align: center;
+    margin: 1rem 0;
+    height: 5rem;
+}
+button{
+    width: 10rem;
+    height: 3.5rem;
+    border: 0;
+    background-color: #FE5946;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+button:hover{
+    cursor: pointer;
+}
+.switch img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+#mic{
+    fill: #fff;
+}
+#micInside{
+    display: none;
+}
+#micOutside{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+@media screen and (min-width : 768px) {
+    .viewmore h3{
+        display: inline;
+    }
+    /* main{
+        width: 70%;
+        margin: auto;
+    }
+    .info{
+        float: left;
+        width: 40%;
+    } */
+
+}
+@media screen and (min-width : 1280px) {
+    .logo{
+        display: flex;
+        justify-content: space-around;
+    }
+    .text{
+        margin: 0;
+    }
+
+
+}
