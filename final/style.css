@@ -1,16 +1,18 @@
 *{
     font-size: 98%;
     margin: 0;
+    padding: 0;
     border: 0;  
     box-sizing: border-box;
     font-family: Futura;
     font-weight: 300;
+}
+h1,h2,h3,h4,p{
     line-height: 2;
 }
 img, object{
     display: block;
     max-width: 100%;
-    /* height: auto; */
 }
 .down{
     margin-bottom: .5rem;
@@ -31,9 +33,9 @@ img, object{
     margin-left: -.5rem;    
 }
 .switch{
+    width: 4.2rem;
     margin: auto 1rem;
     display: flex;
-    width: 4rem;
     border-style: solid;
     border-color: white;
     border-width: 2px;
@@ -48,7 +50,6 @@ img, object{
     display: flex;
     justify-content: space-between;
 }
-
 .titleImg1{
     background-image: url('assets/lineUp.jpg');
     background-size: cover;
@@ -93,9 +94,11 @@ main{
 
 .viewmore{
     position: absolute;
-    left: 47.5%;
+    /* left: 47.5%; */
     top: 90vh;
     text-align: center;
+    height: 100%;
+    width: 100%;
 }
 .viewmore img{
     width: 2rem;
@@ -108,21 +111,16 @@ main{
 .down a{
     width: 2.5rem;
 }
-/* .venue,.mainWeb{
-    width: 3rem;
-    height: 3rem;
-} */
-.night{
-    visibility: hidden;
+#night{
+    visibility: hidden
 }
 
 /*header*/
 header{
+    transition: .5s;
     color: white;
     height: 100vh;
-    /* background-image: url('assets/1.jpg'); */
-    /* background-image: url('assets/5.jpg'); */
-    background-image: url('assets/6.jpg');
+    background-image: url('assets/7.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -130,13 +128,11 @@ header{
     justify-content: space-between;
 }
 .logo{
-    /* margin-bottom: 26rem; */
     margin-bottom: 60%;
     text-align: center;
 }
 .logo img{
     width: 19rem;
-    /* height: auto; */
     margin: auto;
 }
 
@@ -149,7 +145,6 @@ header{
     width: 100%;
     z-index: -1;
     background-image: url('assets/bg.jpg');    
-    /* background-color: red; */
 }
 
 .info{
@@ -163,9 +158,6 @@ header{
 }
 .info2{
     background-color: #fff;
-}
-.viewmore h3{
-    display: none;
 }
 .text{
     text-align: center;
@@ -210,13 +202,35 @@ main button{
     50% {fill: white;}
     100% {fill: none;}
 }
+@keyframes bounce1{
+    0% {transform: translate(0,-20px);}
+    100% {transform: translate(0,0);}
+}
+@keyframes bounce2{
+    0% {
+        transform: translate(0,100px);
+        opacity: .8;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 1;    
+    }
+}
+.logoimg, .text{
+    animation: bounce1 1.5s;
+}
+main{
+    animation: bounce2 2s;
+}
 #micInside{
+    display: none;
     animation-name: wave;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 #micOutside{
+    display: none;
     animation-name: wave2;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -243,19 +257,6 @@ button:hover{
     transition-delay: .2s;
     transform: translate(0, -7%);
 }
-
-/*DISC*/
-/* #disc{
-    transition: transform 2s ease-in;
-}
-
-#disc:hover{
-    fill: #000;
-    cursor: pointer;
-    transform: rotate(1800deg);
-    transform-origin: center;
-} */
-
 
 /*CINEMA*/
 #cinema{
@@ -291,10 +292,15 @@ button:hover{
 .ishovered1 .star4{
     fill:#620b15;
 }
+.ishovered1 .star6{
+    fill:#E5B738;
+}
+.ishovered1 .star7  {
+    fill:#E5B738;
+}
 
 
 /*DEVICES*/
-
 .ishovered3 #screen-dsp{
     fill:#ffffff;
 }
@@ -316,18 +322,23 @@ button:hover{
 
 /*COMPASS*/
 #pointer{
-    transition: transform .8s ease-in-out   ;
+    transition: transform .8s ease-in-out;
 }
 .ishovered4 #pointer{
     transform: rotate(360deg);
     transform-origin: 50% 50%;
 }
+.ishovered4 #pointer{
+    transform: rotate(360deg);
+    transform-origin: 50% 50%;
+}
+.ishovered5 #pointer{
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+}
 
 
 @media screen and (min-width : 768px) {
-    .info{
-        height: 33rem;
-    }
     .titleImg1,.titleImg2,.titleImg3,.titleImg4{
         height: 18rem;        
     }
@@ -341,7 +352,7 @@ button:hover{
         width: 25rem;
     }
     .bgMain{
-        height: 78rem;
+        height: 160rem;
     }
     main{
         display: grid;
@@ -351,9 +362,16 @@ button:hover{
     }
     .info{
         width: 23rem;
+        height: 33rem;
     }
 
 }
+@media screen and (min-width : 940px){
+    .bgMain{
+        height: 78rem;
+    }
+}
+
 @media screen and (min-width : 1280px) {
     .logo{
         margin-bottom: 19rem;
@@ -394,9 +412,6 @@ button:hover{
     }
     html{
         font-size: 100%;
-    }
-    h1{
-
     }
 }
 @media (min-width: 87.5em) {
