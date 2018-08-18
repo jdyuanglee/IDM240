@@ -137,8 +137,8 @@ header{
     /* background-color: red; */
 }
 .logo{
-    margin-bottom: 26rem;
-    /* margin-bottom: 60%; */
+    /* margin-bottom: 26rem; */
+    margin-bottom: 60%;
 	text-align: center;
 }
 .logo img{
